@@ -39,6 +39,7 @@ BuildRequires:	cmake(KF6Crash)
 BuildRequires:	cmake(KF6Config)
 BuildRequires:	cmake(KF6KirigamiAddons)
 BuildRequires:	cmake(KF6Purpose)
+BuildRequires:	cmake(KF6WindowSystem)
 BuildRequires:	cmake(MpvQt)
 BuildRequires:  qt6-qtbase-theme-gtk3
 BuildRequires:	youtube-dl
