@@ -4,7 +4,7 @@
 
 Name:		plasma6-plasmatube
 Version:	24.01.90
-Release:	%{?git:0.%{git}.}2
+Release:	%{?git:0.%{git}.}1
 Summary:	YouTube client for Plasma Mobile
 %if 0%{?git}
 Source0:	https://invent.kde.org/plasma-mobile/plasmatube/-/archive/v%{version}/plasmatube-v%{version}.tar.bz2
@@ -21,6 +21,9 @@ BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6Quick)
+BuildRequires:  cmake(Qt6Qml)
+BuildRequires:  cmake(Qt6QmlCore)
+BuildRequires:  cmake(Qt6QmlNetwork)
 BuildRequires:	cmake(Qt6Gui)
 BuildRequires:	cmake(Qt6QuickControls2)
 BuildRequires:	cmake(Qt6Multimedia)
@@ -32,7 +35,9 @@ BuildRequires:	cmake(KF6I18n)
 BuildRequires:	cmake(KF6CoreAddons)
 BuildRequires:	cmake(KF6Crash)
 BuildRequires:	cmake(KF6Config)
+BuildRequires:	cmake(KF6KirigamiAddons)
 BuildRequires:	cmake(MpvQt)
+BuildRequires:  qt6-qtbase-theme-gtk3
 BuildRequires:	youtube-dl
 Requires:	youtube-dl
 
