@@ -3,7 +3,7 @@
 #define commit cc1ac2462e41873741c8b6f3fcafa29ae3ce6a30
 
 Name:		plasma6-plasmatube
-Version:	24.01.90
+Version:	24.01.95
 Release:	%{?git:0.%{git}.}1
 Summary:	YouTube client for Plasma Mobile
 %if 0%{?git}
