@@ -4,8 +4,8 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
 Name:		plasma6-plasmatube
-Version:	24.02.0
-Release:	%{?git:0.%{git}.}2
+Version:	24.02.1
+Release:	%{?git:0.%{git}.}1
 Summary:	YouTube client for Plasma Mobile
 %if 0%{?git}
 Source0:	https://invent.kde.org/multimedia/plasmatube/-/archive/%{gitbranch}/plasmatube-%{gitbranchd}.tar.bz2
