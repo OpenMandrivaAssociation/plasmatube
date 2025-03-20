@@ -5,7 +5,7 @@
 
 Name:		plasma6-plasmatube
 Version:	24.12.3
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 Summary:	YouTube client for Plasma Mobile
 %if 0%{?git}
 Source0:	https://invent.kde.org/multimedia/plasmatube/-/archive/%{gitbranch}/plasmatube-%{gitbranchd}.tar.bz2
