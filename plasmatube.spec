@@ -4,8 +4,8 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
 Name:		plasmatube
-Version:	25.04.0
-Release:	%{?git:0.%{git}.}2
+Version:	25.04.3
+Release:	%{?git:0.%{git}.}1
 Summary:	YouTube client for Plasma Mobile
 %if 0%{?git}
 Source0:	https://invent.kde.org/multimedia/plasmatube/-/archive/%{gitbranch}/plasmatube-%{gitbranchd}.tar.bz2
@@ -48,13 +48,12 @@ Requires:	youtube-dl
 BuildSystem:	cmake
 BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
+%rename plasma6-plasmatube
+
 %description
 YouTube client for Plasma Mobile
 
-%install -a
-%find_lang plasmatube
-
-%files -f plasmatube.lang
+%files -f %{name}.lang
 %{_bindir}/plasmatube
 %{_datadir}/applications/org.kde.plasmatube.desktop
 %{_datadir}/icons/hicolor/scalable/apps/org.kde.plasmatube.svg
