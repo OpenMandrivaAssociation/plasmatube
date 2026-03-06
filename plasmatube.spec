@@ -4,7 +4,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
 Name:		plasmatube
-Version:	25.12.2
+Version:	25.12.3
 Release:	%{?git:0.%{git}.}1
 Summary:	YouTube client for Plasma Mobile
 %if 0%{?git}
